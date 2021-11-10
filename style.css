@@ -1,0 +1,82 @@
+html,
+body {
+    text-align: center;
+    padding: .18%;
+    /* perspective: 700px; */
+}
+
+th {
+    background-color: rgb(230, 123, 22);
+    color: white;
+    font-weight: normal;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+td {
+    background-color: rgb(238, 238, 238);
+    color: rgb(111, 111, 111);
+    padding: 20px 30px;
+}
+
+
+.upload-btn-wrapper {
+    align-content: center;
+    overflow: hidden;
+    display: inline-block;
+
+    z-index: 1;
+    position: fixed;
+    left: 80%;
+    right: 0;
+    padding: 0;
+    bottom: 20px;
+    height: 100px;
+
+}
+
+.upload-btn-wrapper input[type=file] {
+    opacity: 0;
+    font-size: 100px;
+    position:relative;
+    left: 0;
+    top: 0;
+    text-align: center;
+}
+
+
+
+button{
+    align-items: center;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+    position:absolute;
+    border-color: red;
+    align-items: center;
+    padding: 20px 38px;
+    top: 0;
+    font-size: 30px;
+    font-family: "Open Sans", Helvetica;
+    border-radius: 4px;
+    border-bottom: 1px solid rgba(230, 123, 28, 0.616);
+    background: rgb(230, 123, 22);
+    color: #fff;
+    box-shadow: 0px 0px 0px rgba(230, 110, 24, 0.459);
+    transform: translateZ(0);
+
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    top: -10px;
+    box-shadow: 0px 10px 10px rgba(220, 120, 20, 0.712);
+    transform: rotateX(20deg);
+}
+
+button:active {
+    top: 0px;
+    box-shadow: 0px 0px 0px rgba(230, 130, 10, 0.637);
+    background: rgb(230, 130, 10, 0.637);
+}
